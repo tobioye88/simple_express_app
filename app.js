@@ -1,4 +1,3 @@
-import bodyParser from "body-parser";
 import express from "express";
 
 const app = express();
@@ -13,6 +12,12 @@ app.get("/", (req, res) => {
 app.get("/new-page", (req, res) => {
   res.json({
     message: "new page",
+  });
+});
+
+app.get("/cool-page", (req, res) => {
+  res.json({
+    message: "cool page",
   });
 });
 
